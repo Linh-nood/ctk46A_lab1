@@ -1,0 +1,11 @@
+export default function Footer() {
+  return (
+    <footer className="bg-gray-50 border-t mt-auto">
+      <div className="max-w-5xl mx-auto px-4 py-6 text-center text-gray-500 text-sm">
+        <p>
+          © 2026 - Bon Dơng Phi Linh | CTK46A - Các công nghệ mới trong phát triển phần mềm
+        </p>
+      </div>
+    </footer>
+  );
+}

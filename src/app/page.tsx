@@ -1,21 +1,17 @@
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-8">
+    <div className="max-w-5xl mx-auto px-4 py-12">
       <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Xin chào! 👋</h1>
+        <h1 className="text-4xl font-bold mb-4">
+          Xin chao! Toi la Bon Dơng Phi Linh
+        </h1>
         <p className="text-xl text-gray-600 mb-2">
-          Họ và tên: <strong>Bon Dơng Phi Linh</strong>
+          Sinh viên Công nghệ thông tin - Đại học Đà Lạt
         </p>
-        <p className="text-xl text-gray-600 mb-2">
-          MSSV: <strong>2112402</strong>
+        <p className="text-lg text-gray-500">
+          Đam mê phát triển web và các công nghệ mới
         </p>
-        <p className="text-xl text-gray-600 mb-6">
-          Môn: Các công nghệ mới trong PTPM
-        </p>
-        <div className="bg-blue-100 rounded-lg p-4">
-          <p className="text-blue-800">🚀 Đây là project Next.JS đầu tiên của tôi!</p>
-        </div>
       </div>
-    </main>
+    </div>
   );
 }
