@@ -3,16 +3,19 @@ const projects = [
     title: "Website Portfolio",
     description: "Website cá nhân xây dựng bằng Next.js và Tailwind CSS.",
     tech: ["Next.js", "Tailwind CSS", "TypeScript"],
+    status: "Đang phát triển",
   },
   {
     title: "Ứng dụng quản lý công việc",
     description: "Ứng dụng quản lý công việc nhỏ với React và Local Storage.",
     tech: ["React", "JavaScript", "CSS Modules"],
+    status: "Hoàn thành",
   },
   {
     title: "API RESTful",
     description: "API quản lý sản phẩm với Node.js và Express.",
     tech: ["Node.js", "Express", "MongoDB"],
+    status: "Đang phát triển",
   },
 ];
 
@@ -26,9 +29,20 @@ export default function ProjectsPage() {
             key={index}
             className="border rounded-lg p-6 hover:shadow-md transition-shadow"
           >
-            <h2 className="text-2xl font-semibold mb-2">{project.title}</h2>
-            <p className="text-gray-600 mb-4">{project.description}</p>
-            <div className="flex gap-2">
+            <div className="flex items-center justify-between mb-2">
+              <h2 className="text-xl font-semibold">{project.title}</h2>
+              <span
+                className={`text-xs px-2 py-1 rounded-full ${
+                  project.status === "Hoàn thành"
+                    ? "bg-green-100 text-green-700"
+                    : "bg-yellow-100 text-yellow-700"
+                  }`}
+                >
+                  {project.status}  
+              </span>
+            </div>
+            <p className="text-gray-600 mb-4 flex-1">{project.description}</p>
+            <div className="flex flex-wrap gap-2">
               {project.tech.map((t) => (
                 <span
                   key={t}
@@ -38,7 +52,7 @@ export default function ProjectsPage() {
                 </span>
               ))}
             </div>
-      </div>
+          </div>
         ))}
       </div>
     </div>
