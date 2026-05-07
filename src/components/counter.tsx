@@ -6,30 +6,20 @@ export default function Counter() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="flex items-center justify-between gap-4 rounded-2xl border border-slate-200 bg-slate-50 p-4">
-      <div>
-        <p className="text-sm text-slate-500">Client Component</p>
-        <p className="text-lg font-medium text-slate-900">Bộ đếm tương tác</p>
-      </div>
-      <div className="flex items-center gap-3">
-        <button
-          type="button"
-          onClick={() => setCount((value) => value - 1)}
-          className="h-10 w-10 rounded-full bg-white text-lg font-semibold text-slate-700 shadow-sm ring-1 ring-slate-200 transition-colors hover:bg-slate-100"
-        >
-          -
-        </button>
-        <span className="min-w-12 text-center text-xl font-semibold text-sky-700">
-          {count}
-        </span>
-        <button
-          type="button"
-          onClick={() => setCount((value) => value + 1)}
-          className="h-10 w-10 rounded-full bg-sky-600 text-lg font-semibold text-white shadow-sm transition-colors hover:bg-sky-500"
-        >
-          +
-        </button>
-      </div>
+    <div className="flex items-center gap-4">
+      <button
+        onClick={() => setCount(count - 1)}
+        className="bg-gray-200 hover:bg-gray-300 w-10 h-10 rounded-lg text-xl font-bold transition-colors"
+      >
+        -
+      </button>
+      <span className="text-2xl font-bold w-12 text-center">{count}</span>
+      <button
+        onClick={() => setCount(count + 1)}
+        className="bg-blue-600 hover:bg-blue-700 text-white w-10 h-10 rounded-lg text-xl font-bold transition-colors"
+      >
+      +
+      </button>
     </div>
   );
 }

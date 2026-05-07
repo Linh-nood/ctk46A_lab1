@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getPostBySlug, posts } from "@/data/posts";
+import LikeButton from "@/components/like-button";
 
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>;
@@ -33,6 +34,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
         <div className="prose max-w-none text-gray-700 whitespace-pre-line">
           {post.content}
+        </div>
+        <div className="border-t pt-6">
+          <LikeButton/>
         </div>
       </article>
     </div>
