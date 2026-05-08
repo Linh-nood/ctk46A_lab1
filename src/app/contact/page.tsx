@@ -30,10 +30,10 @@ export default function ContactPage() {
             <CardContent className="pt-6">
               <h3 className="font-semibold mb-2">Email</h3>
               <a
-                href="mailto:nguyenvana@sv.dlu.edu.vn"
+                href="mailto:2212402@dlu.edu.vn"
                 className="text-blue-600 hover:underline text-sm"
               >
-                nguyenvana@sv.dlu.edu.vn
+                2212402@dlu.edu.vn
               </a>
             </CardContent>
           </Card>
@@ -41,12 +41,12 @@ export default function ContactPage() {
             <CardContent className="pt-6">
               <h3 className="font-semibold mb-2">GitHub</h3>
               <a
-                href="https://github.com/nguyenvana"
+                href="https://github.com/Linh-nood"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 hover:underline text-sm"
               >
-                github.com/nguyenvana
+                github.com/Linh-nood
               </a>
             </CardContent>
           </Card>
